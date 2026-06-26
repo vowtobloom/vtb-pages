@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book Hub | Notion Reading System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        background: #FDF3E7;
+        color: #1f1f1f;
+        font-family: 'Jost', sans-serif;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 60px 20px;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Cormorant Garamond', serif;
+    }
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .subheading {
+        text-align: center;
+        font-size: 18px;
+        opacity: 0.8;
+        margin-bottom: 40px;
+    }
+
+    .cta {
+        text-align: center;
+        margin: 30px 0 60px;
+    }
+
+    .btn {
+        background: #CD8899;
+        color: white;
+        padding: 14px 26px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+    }
+
+    .section {
+        margin-bottom: 60px;
+    }
+
+    .highlight {
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    img, video {
+        width: 100%;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+
+    .feature-title {
+        font-weight: 600;
+        margin-top: 25px;
+    }
+
+    .divider {
+        margin: 50px 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Book Hub</h1>
+    <p class="subheading">Notion Reading Tracker • TBR Organizer • Reading Habit System</p>
+
+    <div class="cta">
+        <a class="btn" href="#buy">Get Book Hub</a>
+    </div>
+
+    <div class="highlight">
+        Stop saying you’ll read more. Start becoming someone who reads every day.
+    </div>
+
+    <div class="section">
+        <p>If you’ve been buying books, saving recommendations, and telling yourself you’ll start reading more consistently… only to end up doomscrolling instead, you’re not alone.</p>
+
+        <p>The problem isn’t that you lack discipline.</p>
+
+        <p><strong>You lack a system.</strong></p>
+
+        <p>Book Hub is an all-in-one Notion reading tracker designed to help you stop relying on motivation and start building a consistent reading habit. Organize your TBR, track your reading progress, build a digital library, and make reading feel effortless again.</p>
+    </div>
+
+    <div class="section">
+        <h2>See the System</h2>
+
+        <img src="IMAGE_1_URL" />
+        <img src="IMAGE_2_URL" />
+        <img src="IMAGE_3_URL" />
+
+        <video controls>
+            <source src="VIDEO_DEMO_1_URL" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="VIDEO_SHORTCUT_DEMO_URL" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="section">
+        <h2>What’s Included</h2>
+
+        <div class="feature-title">📚 TBR Organizer</div>
+        <p>Keep every book you want to read in one organized space so choosing your next book feels simple instead of overwhelming.</p>
+
+        <div class="feature-title">📖 Reading Tracker</div>
+        <p>Track your progress, bookmarks, and reading habits so you can actually see your consistency build over time.</p>
+
+        <div class="feature-title">🏛️ Digital Library</div>
+        <p>Store every book you’ve read or want to remember in a clean, searchable system.</p>
+
+        <div class="feature-title">🎲 Random Book Generator</div>
+        <p>Eliminates decision fatigue by choosing your next read for you from your own collection.</p>
+
+        <div class="feature-title">⚡ Apple Shortcuts</div>
+        <p>Add books, log sessions, update bookmarks, and search Goodreads in seconds.</p>
+
+        <div class="feature-title">📵 Reading Lockout</div>
+        <p>Locks distracting apps until you’ve completed 15 minutes of reading so your environment supports your habits.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2>Why This Works</h2>
+
+        <p>Most reading trackers help you organize books.</p>
+
+        <p><strong>Book Hub helps you build the habit.</strong></p>
+
+        <p>No more deciding what to read. No more forgetting where you left off. No more scattered lists. No more doomscrolling.</p>
+
+        <p><strong>Just a system that makes reading the easier choice.</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>Your New Reading Routine</h2>
+
+        <p>Your TBR is organized. Your library is searchable. Your progress is visible. Your distractions are reduced.</p>
+
+        <p>Reading stops being something you “try to do” and becomes something you actually do.</p>
+    </div>
+
+    <div class="cta" id="buy">
+        <a class="btn" href="YOUR_CHECKOUT_LINK">Get Book Hub</a>
+    </div>
+
+</div>
+
+</body>
+</html>
