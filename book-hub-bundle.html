@@ -79,7 +79,7 @@
         opacity: 0.85;
     }
 
-    img, iframe {
+    img {
         width: 100%;
         border-radius: 16px;
         margin-top: 18px;
@@ -106,22 +106,20 @@
     .soft {
         opacity: 0.85;
     }
-    .video-wrapper {
+.video-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 ratio */
-    overflow: hidden;
-    border-radius: 16px;
+    aspect-ratio: 16 / 9;
     margin-top: 18px;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border: 0;
+    display: block;
 }
 </style>
 </head>
@@ -161,11 +159,19 @@
         <img src="https://vowtobloom.github.io/vtb-pages/BookkeeperImage.png" />
 
 <div class="video-wrapper">
-    <iframe src="https://drive.google.com/file/d/119OnjZR6uX3VakYVGvOATk48tSH-mB_s/preview"></iframe>
+  <iframe
+    src="https://drive.google.com/file/d/119OnjZR6uX3VakYVGvOATk48tSH-mB_s/preview"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
 </div>
 
 <div class="video-wrapper">
-    <iframe src="https://drive.google.com/file/d/1-DnEqL3IS03JePw3-SeYg3gO_P0j0zwS/preview"></iframe>
+  <iframe
+    src="https://drive.google.com/file/d/1-DnEqL3IS03JePw3-SeYg3gO_P0j0zwS/preview"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
 </div>
 
     <div class="divider"></div>
