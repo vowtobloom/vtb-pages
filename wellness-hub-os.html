@@ -78,7 +78,7 @@
     background:#fff;
   }
   .hero-media img{width:100%;height:100%;object-fit:cover;display:block}
-  .hero-media video{width:100%;display:block;max-height:625px;object-fit:cover}
+  .hero-media video{width:100%;display:block;max-height:560px;object-fit:cover}
 
   @media(max-width:700px){
     .hero-media{grid-template-columns:1fr 1fr}
@@ -133,7 +133,10 @@
 
   /* ---------- OVERVIEW VIDEO ---------- */
   .overview-video{
-    max-width:800px;margin:0 auto;display:block;
+    width:100%;
+    max-width:800px;
+    margin:0 auto;
+    display:block;
     border-radius:20px;
     box-shadow:0 16px 40px rgba(90,60,50,.16);
     border:1px solid rgba(220,193,138,.5);
@@ -163,55 +166,6 @@
     background:linear-gradient(135deg,var(--gold),var(--pink));
     color:#fff;
   }
-  
-/* ---------- FAQ ---------- */
-
-.faq{
-    max-width:850px;
-    margin:80px auto 0;
-}
-
-.faq details{
-    background:linear-gradient(160deg,#ffffff,#FBF1E4);
-    border:1px solid rgba(220,193,138,.4);
-    border-radius:18px;
-    margin-bottom:16px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(90,60,50,.06);
-}
-
-.faq summary{
-    cursor:pointer;
-    list-style:none;
-    padding:20px 24px;
-    font-weight:500;
-    font-size:17px;
-    color:var(--pink-dark);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.faq summary::-webkit-details-marker{
-    display:none;
-}
-
-.faq summary::after{
-    content:"+";
-    font-size:24px;
-    font-weight:400;
-    transition:.2s ease;
-}
-
-.faq details[open] summary::after{
-    transform:rotate(45deg);
-}
-
-.faq p{
-    padding:0 24px 22px;
-    margin:0;
-    color:#6b5f57;
-}
 
   /* ---------- FINAL CTA ---------- */
   .final-cta{
@@ -256,7 +210,7 @@
   <div class="divider"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
 
   <div class="feature">
-    <div><h2>Plan Smarter Workouts</h2><p>Create structured workouts with self-guided or video exercises.</p></div>
+    <div><h2>Plan Smarter Workouts</h2><p>Create structured workouts with warm-ups, exercises, cooldowns and exercise demos.</p></div>
     <div><video controls src="https://vowtobloom.github.io/vtb-pages/Fitness%20Planner%20Demo.mov"></video></div>
   </div>
 
@@ -290,7 +244,8 @@
   <h2>What's Included</h2>
   <div class="cards">
     <div class="card"><div class="card-icon">💪</div>Fitness Planner</div>
-    <div class="card"><div class="card-icon">📈</div>Workout Log & Stats</div>
+    <div class="card"><div class="card-icon">📈</div>Workout Stats</div>
+    <div class="card"><div class="card-icon">📝</div>Exercise Log</div>
     <div class="card"><div class="card-icon">💊</div>Medications & Supplements</div>
     <div class="card"><div class="card-icon">📅</div>Appointment Tracker</div>
     <div class="card"><div class="card-icon">✨</div>Beauty Routines</div>
@@ -298,48 +253,6 @@
     <div class="card"><div class="card-icon">🌅</div>Routines Shortcut</div>
     <div class="card"><div class="card-icon">📖</div>Detailed Setup Guide</div>
   </div>
-  
-  <div class="divider">
-    <span class="line"></span>
-    <span class="diamond"></span>
-    <span class="line"></span>
-</div>
-
-<section class="faq">
-
-<h2>Frequently Asked Questions</h2>
-
-<details>
-<summary>I'm new to Notion and Apple Shortcuts. Is Wellness Hub OS beginner friendly?</summary>
-<p>Yes! While there is an initial setup process to personalize the system, Wellness Hub OS includes a comprehensive setup guide that walks you through every step. Once everything is configured, day-to-day use is designed to be simple, intuitive, and easy to maintain.</p>
-</details>
-
-<details>
-<summary>Do I need Apple Shortcuts to use Wellness Hub OS?</summary>
-<p>No. The Notion template can be used on its own. However, the included Apple Shortcuts unlock guided workouts, beauty routines, medication tracking, routine automation, and other advanced features.</p>
-</details>
-
-<details>
-<summary>Can I customize the system?</summary>
-<p>Absolutely! Every database, routine, workout, medication, appointment, and beauty routine can be personalized to fit your lifestyle.</p>
-</details>
-
-<details>
-<summary>Is there a setup process?</summary>
-<p>Yes. Wellness Hub OS includes a detailed setup guide that walks you through configuring both the Notion template and the Apple Shortcuts. Once everything is set up, daily use is simple.</p>
-</details>
-
-<details>
-<summary>What devices does this work on?</summary>
-<p>The Notion template works on any device that supports Notion. The included shortcuts require Apple Shortcuts and are designed for iPhone, iPad, and Mac.</p>
-</details>
-
-<details>
-<summary>How will I receive my purchase?</summary>
-<p>You'll receive instant access after checkout, including the Wellness Hub OS Notion template, the Self Care Manager shortcut, the Routines shortcut, and the complete setup guide.</p>
-</details>
-
-</section>
 
   <div class="final-cta">
     <h2>Ready to Build Your Wellness System?</h2>
@@ -349,5 +262,4 @@
 
 </div>
 </body>
-</html>
 </html>
