@@ -231,7 +231,7 @@
         { icon:'📊', title:'Progress You Can See', text:'Watch your consistency build automatically, with zero manual tracking.' }
       ],
       identity: '“Become the woman whose self-care runs itself — effortlessly put-together, every single day.”',
-      salesUrl: 'https://vowtobloom.github.io/vtb-pages/wellness-sales-page.html?from=start'
+      salesUrl: 'https://vowtobloom.github.io/vtb-pages/wellness-hub-os.html?from=start'
     },
     {
       id: 'books',
@@ -247,12 +247,12 @@
         { icon:'📚', title:'Your Whole Reading Life, Organized', text:'TBR list, digital library, and reading log — all in one place.' }
       ],
       identity: '“Become the woman who always finishes what she starts — who turns \'I should read more\' into a life full of books.”',
-      salesUrl: '❗ADD-BOOK-HUB-SALES-PAGE-URL❗?from=start'
+      salesUrl: 'https://vowtobloom.github.io/vtb-pages/bool-hub-os.html?from=start'
     }
   ];
 
   // Your Cloudflare Worker endpoint — creates the Stripe Checkout Session dynamically
-  const WORKER_URL = '❗https://your-worker-name.your-subdomain.workers.dev❗';
+  const WORKER_URL = 'https://stripe-checkout.vowtobloom.workers.dev/';
 
   const selectedAreas = new Set();   // life-area cards chosen on step 1
   const orderSelected = new Set();   // "include in my order" toggles on results screen
