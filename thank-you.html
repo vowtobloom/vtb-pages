@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Downloads | Vow to Bloom</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#CD8899;
+    --pink-dark:#B96E80;
+    --gold:#DCC18A;
+    --gold-dark:#C9A968;
+    --cream:#FDF3E7;
+    --ink:#2b2320;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(220,193,138,.20), transparent 45%),
+      radial-gradient(circle at 100% 20%, rgba(205,136,153,.16), transparent 50%),
+      radial-gradient(circle at 50% 100%, rgba(220,193,138,.14), transparent 50%),
+      var(--cream);
+    color:var(--ink);
+    font-family:Jost,sans-serif;
+    line-height:1.7;
+    min-height:100vh;
+    padding:60px 20px 100px;
+  }
+  .container{max-width:600px;margin:0 auto}
+
+  .logo{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--pink-dark);letter-spacing:2px;text-align:center;margin-bottom:24px}
+
+  h1{
+    font-family:"Cormorant Garamond",serif;font-weight:600;font-size:44px;
+    text-align:center;margin:0 0 10px;line-height:1.2;
+    background:linear-gradient(90deg,var(--pink-dark),var(--gold-dark));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .intro{text-align:center;color:#6b5f57;font-size:16px;max-width:440px;margin:0 auto 44px}
+
+  .flourish{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 44px}
+  .flourish .line{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dark),transparent)}
+  .flourish .diamond{width:7px;height:7px;background:var(--gold-dark);transform:rotate(45deg)}
+
+  .product-card{
+    background:linear-gradient(135deg, rgba(255,255,255,.85), rgba(253,243,231,.5));
+    border:1px solid rgba(220,193,138,.4);
+    border-radius:24px;
+    padding:36px 32px;
+    margin-bottom:28px;
+    box-shadow:0 14px 32px rgba(90,60,50,.07);
+  }
+  .product-name{font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--pink-dark);text-align:center;margin-bottom:6px}
+  .product-sub{text-align:center;color:#8a7c70;font-size:14px;margin-bottom:26px}
+
+  .btn-row{display:flex;justify-content:center;margin-bottom:8px}
+  .btn{
+    display:inline-block;text-align:center;
+    background:linear-gradient(120deg,var(--pink) 0%,var(--pink-dark) 55%,var(--gold-dark) 130%);
+    color:#fff;padding:15px 34px;border-radius:999px;text-decoration:none;
+    font-weight:600;letter-spacing:.3px;font-size:14.5px;
+    box-shadow:0 8px 20px rgba(205,136,153,.32);
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px)}
+
+  .steps{margin-top:22px;padding-top:22px;border-top:1px solid rgba(220,193,138,.35)}
+  .step{display:flex;gap:10px;margin-bottom:10px;font-size:14px;color:#5c5148}
+  .step .num{
+    flex-shrink:0;width:20px;height:20px;border-radius:50%;
+    background:linear-gradient(135deg,var(--gold),var(--pink));color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+  }
+
+  .email-note{
+    text-align:center;font-size:13.5px;color:#8a7c70;
+    background:#fff8ee;border:1px solid rgba(220,193,138,.5);border-radius:14px;
+    padding:16px 20px;margin-top:40px;
+  }
+
+  .support-note{text-align:center;margin-top:24px;font-size:13px;color:#a89b8f}
+
+  #noItemsMsg{display:none;text-align:center;color:#8a7c70}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="logo">Vow to Bloom</div>
+  <h1>Your Downloads Are Ready</h1>
+  <div class="flourish"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+  <p class="intro">Thank you for your purchase! Duplicate each template below to get started — your setup guide is included right inside.</p>
+
+  <div id="productBlocks"></div>
+
+  <p id="noItemsMsg">We couldn't find your order details on this page — no need to worry, your download links have already been sent to your email.</p>
+
+  <div class="email-note">
+    📧 A copy of your download links has also been sent to your email — keep it handy in case you need it again later.
+  </div>
+  <p class="support-note">If you have any issues accessing your purchase, contact support and we'll help you right away.</p>
+
+</div>
+
+<script>
+  // Each product's Notion template link (setup guide is a page inside it).
+  // Add a new entry here every time a new product launches. ❗
+  const PRODUCT_DOWNLOADS = {
+    wellness: {
+      name: 'Wellness Hub OS',
+      templateUrl: '❗ADD-WELLNESS-NOTION-DUPLICATE-LINK❗',
+      steps: [
+        'Click "Duplicate Your Template" to add it to your Notion workspace',
+        'Open the Setup Guide page inside the template for step-by-step instructions',
+        'Set up your Self Care Manager & Routines Shortcuts',
+        'Start tracking your fitness, beauty, and wellness routines'
+      ]
+    },
+    books: {
+      name: 'Book Hub OS',
+      templateUrl: '❗ADD-BOOKS-NOTION-DUPLICATE-LINK❗',
+      steps: [
+        'Click "Duplicate Your Template" to add it to your Notion workspace',
+        'Open the Setup Guide page inside the template for step-by-step instructions',
+        'Set up your Reading Session & App Lock Shortcuts',
+        'Add your first books to your TBR and start logging'
+      ]
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const itemsParam = params.get('items');
+  const purchasedIds = itemsParam ? itemsParam.split(',').map(s => s.trim()) : [];
+
+  const container = document.getElementById('productBlocks');
+  const validPurchases = purchasedIds.filter(id => PRODUCT_DOWNLOADS[id]);
+
+  if (validPurchases.length === 0) {
+    document.getElementById('noItemsMsg').style.display = 'block';
+  } else {
+    validPurchases.forEach(id => {
+      const p = PRODUCT_DOWNLOADS[id];
+      const card = document.createElement('div');
+      card.className = 'product-card';
+      card.innerHTML = `
+        <div class="product-name">${p.name}</div>
+        <div class="product-sub">Your template is ready to duplicate</div>
+        <div class="btn-row">
+          <a class="btn" href="${p.templateUrl}" target="_blank">Duplicate Your Template</a>
+        </div>
+        <div class="steps">
+          ${p.steps.map((s, i) => `
+            <div class="step">
+              <div class="num">${i + 1}</div>
+              <div>${s}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  }
+</script>
+</body>
+</html>
